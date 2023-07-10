@@ -1,0 +1,59 @@
+
+header {
+    
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-block: 2rem;
+        width: min(90%, 1400px);
+        margin-inline: auto;
+    }
+
+    .hamburger {
+        position: relative;
+
+        .close__icon {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+        }
+    }
+
+    .nav__menu {
+        position: absolute;
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+        width: 100%;
+        background-color: #fff;
+        transform: translateY(64%);
+        padding: 3em;
+        list-style: none;
+
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .invite__menu-btn {
+            border: none;
+            background-color: #000;color: #fff;
+            padding: .5em 1em;
+            width: 100%;
+        }
+    }
+
+    .invite__nav-btn {
+        display: none;
+    }
+}
+
+
+
+
+
+
