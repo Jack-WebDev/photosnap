@@ -1,0 +1,36 @@
+
+.section-1 {
+
+    .tablet__img {
+        display: none;
+    }
+
+    .desktop__img {
+        display: none;
+    }
+
+
+    .section-1__content {
+        display: grid;
+        gap: 1rem;
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: clamp(1.3rem, 1.5vw + .5rem, 3rem);
+        line-height: 1.2;
+    }
+
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+
+}
+
+
