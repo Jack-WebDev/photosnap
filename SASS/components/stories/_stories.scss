@@ -2,6 +2,21 @@
   .desktop__img {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .mobile__img {
+      display: none;
+    }
+
+    .desktop__img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .stories__container > * {

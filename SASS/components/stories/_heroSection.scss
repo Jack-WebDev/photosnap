@@ -36,6 +36,26 @@
     }
 
 
+    @media screen and (min-width: 768px) {
+        position: relative;
+        
+        .mobile__img {
+            display: none;
+        }
+
+        .tablet__img {
+            display: inline-block;
+            transform: translateY(7px);
+        }
+
+        .heroSection__content {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(-50%);
+            background-color: unset;
+        }
+    }
+
 
 }
 
