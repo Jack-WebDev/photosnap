@@ -12,12 +12,13 @@
 
     .section-1__content {
         display: grid;
+        align-content: center;
         gap: 1rem;
         padding: 2em;
     }
 
     h1 {
-        font-size: clamp(1.3rem, 1.5vw + .5rem, 3rem);
+        font-size: clamp(1.3rem, 4vw + .5rem, 7rem);
         line-height: 1.2;
     }
 
@@ -30,6 +31,18 @@
         text-decoration: none;
     }
 
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+        .mobile__img {
+            display: none;
+        }
+
+        .tablet__img {
+            display: inline-block;
+        }
+    }
 
 }
 
