@@ -1,0 +1,27 @@
+.section-2 {
+  display: grid;
+  justify-items: center;
+  padding: 2em;
+  gap: 2rem;
+
+  .responsive,
+  .noLimit,
+  .embed,
+  .domain,
+  .exposure,
+  .dragDrop {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .responsive__content,
+  .noLimit__content,
+  .embed__content,
+  .domain__content,
+  .exposure,
+  .dragDrop__content {
+    display: grid;
+    text-align: center;
+  }
+}
