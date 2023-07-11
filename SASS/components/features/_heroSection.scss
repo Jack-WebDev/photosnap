@@ -9,6 +9,7 @@
 
   .heroSection__content {
     display: grid;
+    align-content: center;
     gap: 1rem;
     padding: 2em;
     background-color: #000;
@@ -30,5 +31,19 @@
     gap: 1rem;
     color: #fff;
     text-decoration: none;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    .mobile__img {
+      display: none;
+    }
+
+    .tablet__img {
+      display: inline-block;
+    }
   }
 }
