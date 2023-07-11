@@ -2,6 +2,7 @@
 .section-3 {
     display: grid;
     padding: 2em;
+    gap: 2rem;
 
     h2 {
         display: none;
@@ -70,6 +71,39 @@
             font-family: var(--ff-1);
             font-weight: 200;
             letter-spacing: 2px;
+        }
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+
+        h2 {
+            display: inline-block;
+            text-align: center;
+        }
+
+
+        .table__headings {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        
+        .table__headings > *:not(:first-child) {
+            display: inline-block;
+        }
+
+        .desktop__img {
+            display: inline-block;
+        }
+
+        .feature {
+            grid-template-columns: repeat(4,1fr);
+            align-items: center;
+        }
+
+        .feature__content {
+            display: none;
         }
     }
 }
