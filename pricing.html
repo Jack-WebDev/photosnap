@@ -5,12 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital@1&family=Raleway:ital,wght@1,500&family=Roboto+Serif:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/pricing.css">
     <script defer src="JS/header.js"></script>
+    <script defer src="JS/togglebtn.js"></script>
     <title>Pricing</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="/images/shared/desktop/logo.svg" alt="" class="logo">
+
+            <div class="hamburger" id="hamburger">
+                <img class="menu__icon" id="menuIcon" src="/images/shared/mobile/menu.svg" alt="">
+                <img class="close__icon" id="closeIcon" src="/images/shared/mobile/close.svg" alt="">
+            </div>
+            
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="#">Stories</a></li>
+                <li class="nav__item"><a href="#">Features</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
+                <hr style="width: 100%;">
+                <button class="invite__menu-btn">Get An Invite</button>
+            </ul>
+
+            <button class="invite__nav-btn">Get An Invite</button>
+
+        </nav>
+    </header>
     
+    <main>
+        <section class="heroSection">
+            <img class="mobile__img" src="/images/pricing/mobile/hero.jpg" alt="">
+            <img class="tablet__img" src="/images/pricing/tablet/hero.jpg" alt="">
+            <img class="desktop__img" src="/images/pricing/desktop/hero.jpg" alt="">
+
+            <div class="heroSection__content">
+                <h1>PRICING</h1>
+
+                <p>Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section-3">
+            <h2>COMPARE</h2>
+
+            <div class="price__packages">
+                <div class="table__headings">
+                    <h3>THE FEATURES</h3>
+                    <h3>BASIC</h3>
+                    <h3>PRO</h3>
+                    <h3>BUSINESS</h3>
+                </div>
+                <hr>
+
+                <div class="features__container">
+
+                    <div class="feature posting">
+                        <h3>UNLIMITED STORY POSTING</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>UNLIMITED PHOTO UPLOAD</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>EMBEDDING CUSTOM CONTENT</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>CUSTOMIZE METADATA</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>ADVANCED METRICS</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>PHOTO DOWNLOADS</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>SEARCH ENGINE INDEXING</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <h3>CUSTOM ANALYTICS</h3>
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+                        <img class="desktop__img" src="./images/pricing/desktop/check.svg" alt="">
+
+                        <div class="feature__content">
+                            <div class="option">
+                                <p>BASIC</p>
+                            </div>
+                            <div class="option">
+                                <p>PRO</p>
+                            </div>
+                            <div class="option">
+                                <p>BUSINESS</p>
+                                <img src="./images/pricing/desktop/check.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-4">
+            <h2>WE'RE IN BETA. GET YOUR INVITE TODAY</h2>
+
+            <a href="#">READ STORY <img src="/images/shared/desktop/arrow-white.svg" alt=""></a>
+
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <div class="logo__socials">
+                <img src="/images/shared/desktop/logo-white.svg" alt="" class="logo">
+
+                <div class="socials">
+                    <img src="/images/shared/desktop/pinterest.svg" alt="">
+                    <img src="/images/shared/desktop/facebook.svg" alt="">
+                    <img src="/images/shared/desktop/instagram.svg" alt="">
+                    <img src="/images/shared/desktop/twitter.svg" alt="">
+                    <img src="/images/shared/desktop/youtube.svg" alt="">
+                </div>
+            </div>
+
+            <ul class="footer__menu">
+                <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">STORIES</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">FEATURES</a></li>
+                <li class="nav__item"><a href="" class="nav__link">PRICING</a></li>
+            </ul>
+
+            <div class="copyright">
+                <a href="#">GET AN INVITE <img src="/images/shared/desktop/arrow-white.svg" alt=""></a>
+
+                <p>Copyright 2023. All Rights Reserve</p>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>
