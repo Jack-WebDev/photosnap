@@ -1,19 +1,22 @@
-
 main {
-    display: grid;
-    gap: 2rem;
+  display: grid;
+  gap: 2rem;
+
+
+  @media screen and (min-width: 1024px) {
+    gap: 5rem;
+  }
 }
 
 .section-2 {
-    display: grid;
-    gap: 5rem;
+  display: grid;
+  gap: 5rem;
 }
 
 .section__header,
 .pricing__container {
   text-align: center;
 }
-
 
 .toggle__section {
   display: flex;
@@ -23,18 +26,17 @@ main {
   font-size: 0.9375rem;
   margin-top: 40px;
 
-
-  .yearly, .monthly {
+  .yearly,
+  .monthly {
     color: rgb(0 0 0 / 0.3);
     transition: transform 900ms ease-in-out;
   }
 
-  .monthly.active, .yearly.active {
+  .monthly.active,
+  .yearly.active {
     color: #000;
     font-weight: 900;
-
   }
-
 }
 
 .toggler {
@@ -138,11 +140,17 @@ main {
     color: #fff;
     background-color: #000;
     font-weight: 900;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #fff;
+    color: #000;
   }
 }
 
 .price__card:nth-of-type(2) {
-    background-color: #000;
+  background-color: #000;
   h2,
   h3,
   p {
@@ -154,35 +162,35 @@ main {
     background-color: #fff;
     color: #000;
   }
+
+  .btn:hover {
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+  }
 }
 
 .hidden {
   display: none;
 }
 
-
-
 @media screen and (min-width: 768px) {
-
-    .price__card .btn {
-        width: 50%;
-    }
+  .price__card .btn {
+    width: 50%;
+  }
 }
-
 
 @media screen and (min-width: 1024px) {
-    .pricing__container {
-        flex-direction: row;
-        gap: 2rem;
-    }
+  .pricing__container {
+    flex-direction: row;
+    gap: 2rem;
+  }
 
-    .price__card {
-        width: 30%;
-    }
+  .price__card {
+    width: 30%;
+  }
 
-    .price__card:nth-of-type(2) {
-        transform: scale(1.1);
-    }
+  .price__card:nth-of-type(2) {
+    transform: scale(1.1);
+  }
 }
-
-
