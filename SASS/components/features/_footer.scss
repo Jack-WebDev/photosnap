@@ -5,8 +5,14 @@ footer {
   nav {
     display: grid;
     justify-items: center;
+    align-items: baseline;
     gap: 2rem;
-  }
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
 
   .logo__socials {
     display: grid;
@@ -24,11 +30,17 @@ footer {
     justify-items: center;
     gap: 1rem;
 
-    .nav__link {
-      color: #fff;
-      text-decoration: none;
+    @media screen and (min-width:1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
     }
-  }
+
+    .nav__link {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
 
   .copyright {
     display: grid;

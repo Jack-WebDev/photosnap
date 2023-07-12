@@ -4,7 +4,23 @@
   text-align: center;
   gap: 2rem;
   background-image: url(/images/shared/mobile/bg-beta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-block: 3em;
+
+
+  @media screen and (min-width: 768px)  {
+    background-image: url(/images/shared/tablet/bg-beta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-width:1024px) {
+    background-image: url(/images/shared/desktop/bg-beta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
 
   h2 {
     color: #fff;

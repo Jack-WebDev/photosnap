@@ -27,4 +27,12 @@
     text-align: center;
   }
 
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-block: 7em;
+    row-gap: 5rem;
+    align-items: end;
+  }
+
 }

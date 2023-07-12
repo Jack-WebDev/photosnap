@@ -46,4 +46,17 @@
       display: inline-block;
     }
   }
+
+
+  @media screen and (min-width: 1024px) {
+    
+    .tablet__img {
+      display: none;
+    }
+
+    .desktop__img {
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }
