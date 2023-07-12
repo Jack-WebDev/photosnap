@@ -1,0 +1,188 @@
+
+main {
+    display: grid;
+    gap: 2rem;
+}
+
+.section-2 {
+    display: grid;
+    gap: 5rem;
+}
+
+.section__header,
+.pricing__container {
+  text-align: center;
+}
+
+
+.toggle__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: 0.9375rem;
+  margin-top: 40px;
+
+
+  .yearly, .monthly {
+    color: rgb(0 0 0 / 0.3);
+    transition: transform 900ms ease-in-out;
+  }
+
+  .monthly.active, .yearly.active {
+    color: #000;
+    font-weight: 900;
+
+  }
+
+}
+
+.toggler {
+  margin: 0 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 0.3);
+  border-radius: 32px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: transform 300ms ease-in-out;
+  }
+
+  &:hover {
+    background-image: none;
+  }
+}
+
+.checkbox:checked + .slider {
+  background-color: #000;
+
+  &::before {
+    background-color: #fff;
+    transform: translateX(26px);
+  }
+
+  &:hover {
+    background-image: none;
+    background-color: #000;
+  }
+}
+
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.price__card {
+  background-color: rgb(0 0 0 / 0.1);
+  padding: 2em;
+  width: max(100% - 3rem);
+  margin: auto;
+  box-shadow: 1px 4px 8px #000;
+
+  h2 {
+    font-size: 1.125rem;
+    color: #000;
+    margin-bottom: 22px;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .dollar {
+    font-size: 2.5rem;
+    margin-right: 5px;
+  }
+
+  .btn {
+    border: none;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 14px;
+    letter-spacing: 1.2px;
+    color: #fff;
+    background-color: #000;
+    font-weight: 900;
+  }
+}
+
+.price__card:nth-of-type(2) {
+    background-color: #000;
+  h2,
+  h3,
+  p {
+    color: #fff;
+  }
+
+  .btn {
+    font-weight: 900;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .price__card .btn {
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .pricing__container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .price__card {
+        width: 30%;
+    }
+
+    .price__card:nth-of-type(2) {
+        transform: scale(1.1);
+    }
+}
+
+

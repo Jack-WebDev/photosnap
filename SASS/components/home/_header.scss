@@ -107,6 +107,14 @@ header {
       padding: 0.5em 1.5em;
       font-weight: 900;
       cursor: pointer;
+      transition: 200ms ease-in;
     }
+
+
+    .invite__nav-btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
   }
 }

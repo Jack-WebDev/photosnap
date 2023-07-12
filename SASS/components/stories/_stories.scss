@@ -70,3 +70,18 @@
     gap: 2rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .stories__container > * > *:last-child {
+    opacity: 0;
+  
+  }
+
+  .stories__container > * > *:last-child:hover {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+  }
+
+
+}
+
