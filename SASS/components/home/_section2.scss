@@ -44,6 +44,29 @@
         }
     }
 
+    
+    @media screen and (min-width: 1024px) {
+        
+        .tablet__img {
+            display: none;
+        }
+
+        .desktop__img {
+            display: inline-block;
+            width: 100%;
+        }
+
+        
+        h2 {
+            font-size: clamp(1.5rem, 3vw + .5rem, 5rem);
+            line-height: 1.1;
+        }
+
+        .section-2__content {
+            padding-inline: 3em;
+        }
+    }
+
 
 }
 

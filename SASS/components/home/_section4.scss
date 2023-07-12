@@ -24,4 +24,10 @@
     padding-block: 4em;
     gap: 3rem;
   }
+
+
+  @media screen and (min-width:1024px) {
+    grid-template-columns: repeat(3,1fr);
+    align-items: baseline;
+  }
 }
