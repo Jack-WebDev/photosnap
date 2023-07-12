@@ -32,11 +32,9 @@
     text-decoration: none;
   }
 
-
-
   @media screen and (min-width: 768px) {
     display: flex;
-    
+
     .mobile__img {
       display: none;
     }
@@ -47,6 +45,19 @@
 
     .heroSection__content {
       align-content: center;
+    }
+  }
+
+
+  @media screen and (min-width:1024px) {
+    
+    .tablet__img {
+      display: none;
+    }
+
+    .desktop__img {
+      display: inline-block;
+      width: 100%;
     }
   }
 }
