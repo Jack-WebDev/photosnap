@@ -25,6 +25,12 @@
   .dragDrop__content {
     display: grid;
     text-align: center;
+    gap: 1rem;
+
+    h3 {
+      font-family: var(--ff-4);
+      font-weight: 900;
+    }
   }
 
 

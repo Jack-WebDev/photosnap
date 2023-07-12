@@ -1,5 +1,8 @@
 
 .section-2 {
+    .mobile__img {
+        width: 100%;
+      }
 
     .tablet__img {
         display: none;
@@ -22,6 +25,10 @@
         line-height: 1.2;
     }
 
+    p {
+        font-family: var(--ff-4);
+    }
+
 
     a {
         display: flex;
@@ -29,6 +36,7 @@
         gap: 1rem;
         color: #000;
         text-decoration: none;
+        font-weight: 900;
     }
 
     @media screen and (min-width: 768px) {
@@ -53,7 +61,7 @@
 
         .desktop__img {
             display: inline-block;
-            width: 100%;
+            width: 60%;
         }
 
         
@@ -66,6 +74,14 @@
             padding-inline: 3em;
         }
     }
+
+
+
+  @media screen and (min-width: 1200px) {
+    .desktop__img {
+        width: 100%;
+    }
+  }
 
 
 }

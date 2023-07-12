@@ -1,6 +1,8 @@
 
 .heroSection {
-
+    .mobile__img {
+        width: 100%;
+      }
 
     .tablet__img {
         display: none;
@@ -24,7 +26,17 @@
     }
 
     p {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
         color: #fff;
+        font-family: var(--ff-4);
+
+
+        span {
+            font-size: 10px;
+            font-weight: 900;
+        }
     }
 
     a {
@@ -33,6 +45,7 @@
         gap: 1rem;
         color: #fff;
         text-decoration: none;
+        font-weight: 900;
     }
 
 

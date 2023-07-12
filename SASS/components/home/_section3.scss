@@ -1,5 +1,9 @@
 .section-3 {
   display: grid;
+  
+  .mobile__img {
+    width: 100%;
+  }
 
   .desktop__img {
     display: none;

@@ -1,4 +1,8 @@
 .heroSection {
+  .mobile__img {
+    width: 100%;
+  }
+  
   .tablet__img {
     display: none;
   }
@@ -22,6 +26,7 @@
 
   p {
     color: #fff;
+    font-family: var(--ff-4);
   }
 
   a {
@@ -57,7 +62,15 @@
 
     .desktop__img {
       display: inline-block;
-      width: 100%;
+      width: 60%;
+    }
+  }
+
+
+
+  @media screen and (min-width: 1200px) {
+    .desktop__img {
+        width: 100%;
     }
   }
 }

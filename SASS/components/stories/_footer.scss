@@ -53,9 +53,12 @@ footer {
       color: #fff;
       text-decoration: none;
       letter-spacing: 2px;
+      font-weight: 900;
     }
 
     p {
+      font-family: var(--ff-1);
+      font-weight: 900;
       color: rgba(#fff, 0.7);
     }
   }

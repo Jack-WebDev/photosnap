@@ -1,71 +1,77 @@
-
 .section-1 {
+  .mobile__img {
+    width: 100%;
+  }
+
+  .tablet__img {
+    display: none;
+  }
+
+  .desktop__img {
+    display: none;
+  }
+
+  .section-1__content {
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: clamp(1.3rem, 4vw + 0.5rem, 7rem);
+    line-height: 1.2;
+  }
+
+  p {
+    font-family: var(--ff-4);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    .mobile__img {
+      display: none;
+    }
 
     .tablet__img {
-        display: none;
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .tablet__img {
+      display: none;
     }
 
     .desktop__img {
-        display: none;
+      display: inline-block;
+      width: 60%;
     }
 
+    h2 {
+      font-size: clamp(1.5rem, 3vw + 0.5rem, 5rem);
+      line-height: 1.1;
+    }
 
     .section-1__content {
-        display: grid;
-        align-content: center;
-        gap: 1rem;
-        padding: 2em;
+      padding-inline: 3em;
     }
+  }
 
-    h1 {
-        font-size: clamp(1.3rem, 4vw + .5rem, 7rem);
-        line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    .desktop__img {
+        width: 100%;
     }
-
-
-    a {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        color: #000;
-        text-decoration: none;
-    }
-
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        
-        .mobile__img {
-            display: none;
-        }
-
-        .tablet__img {
-            display: inline-block;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        
-        .tablet__img {
-            display: none;
-        }
-
-        .desktop__img {
-            display: inline-block;
-            width: 100%;
-        }
-
-        h2 {
-            font-size: clamp(1.5rem,3vw + .5rem,5rem);  
-            line-height: 1.1;      
-        }
-
-        .section-1__content {
-            padding-inline: 3em;
-
-        }
-    }
-
+  }
 }
-
-

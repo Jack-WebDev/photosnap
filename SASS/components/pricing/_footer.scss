@@ -1,67 +1,65 @@
-
 footer {
-    background-color: #000;
-    padding-block: 2em;
+  background-color: #000;
+  padding-block: 2em;
 
-    nav {
-        display: grid;
-        justify-items: center;
-        align-items: start;
-        gap: 2rem;
-    
-        @media screen and (min-width: 768px) {
-          grid-template-columns: 1fr 1fr 1fr;
-          align-items: center;
-        }
-      }
+  nav {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    gap: 2rem;
 
-    .logo__socials {
-        display: grid;
-        justify-items: center;
-        gap: 2rem;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  .logo__socials {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer__menu {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
     }
 
-    .socials {
-        display: flex;
-        gap: 1rem;
+    .nav__link {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-weight: 900;
     }
 
-
-    .footer__menu {
-        display: grid;
-        justify-items: center;
-        gap: 1rem;
-    
-        @media screen and (min-width: 1024px) {
-          grid-template-columns: repeat(4, 1fr);
-          align-items: center;
-        }
-    
-        .nav__link {
-          color: #fff;
-          text-decoration: none;
-        }
-      }
-
-    .copyright {
-        display: grid;
-        justify-items: center;
-        gap: 2rem;
-
-
-        a {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            color: #fff;
-            text-decoration: none;
-            letter-spacing: 2px;
-        }
-
-        p {
-            color: rgba(#fff, .7);
-        }
+    p {
+      font-family: var(--ff-1);
+      font-weight: 900;
+      color: rgba(#fff, 0.7);
     }
+  }
 }
-
-
