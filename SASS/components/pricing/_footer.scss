@@ -39,6 +39,10 @@ footer {
       color: #fff;
       text-decoration: none;
     }
+
+    .nav__link:hover {
+      border-bottom: 2px solid #fff;
+    }
   }
 
   .copyright {
