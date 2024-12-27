@@ -55,10 +55,11 @@ export default function StoriesImage({
           backgroundBlendMode: "overlay",
           aspectRatio: "1 / 1"
         }}
-        className="h-full w-full flex flex-col items-start justify-end gap-y-2 text-white p-8"
+        className="h-full w-full flex flex-col items-start justify-end text-white p-8"
       >
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <p>{author}</p>
+        <span className="text-gray-50 text-sm font-extralight">{date}</span>
+        <h2 className="text-xl font-bold">{title}</h2>
+        <p className="mb-4 text-xs mt-2">{author}</p>
         <div className="flex justify-between items-center gap-x-2 border-t border-gray-100 w-full pt-6">
           <button>VIEW STORY</button>
           <ArrowRight />
