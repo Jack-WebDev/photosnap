@@ -3,3 +3,4 @@ export * from "./StoriesImage";
 export * from "./FeaturesImage";
 export * from "./NavBar";
 export * from "./CTA";
+export * from "./pricingCard";

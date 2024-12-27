@@ -77,7 +77,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="grid lg:grid-cols-3">
+      <div className="grid lg:grid-cols-3 my-12">
         <FeaturesImage
           imageUrl="/features/desktop/responsive.svg"
           title="100% Responsive"
