@@ -52,7 +52,7 @@ export default function ImageContent({
         height={400}
         className="hidden lg:inline-block w-full"
       />
-      <div className={`grid gap-y-4 ${bgColor ?? "bg-black text-white"} p-8 h-full content-center [direction:ltr] xl:pl-24`}>
+      <div className={`grid gap-y-4 ${bgColor ?? "bg-black text-white"} p-8 xl:p-36 h-full content-center [direction:ltr] xl:pl-24`}>
         <h2 className="text-3xl font-bold xl:w-[60%] xl:text-6xl">{title}</h2>
         <p className="xl:w-1/2 my-4 font-light">{content}</p>
         <button className="font-semibold flex items-center gap-x-2">{button}<ArrowRight/></button>
