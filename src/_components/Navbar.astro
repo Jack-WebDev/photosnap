@@ -1,0 +1,132 @@
+---
+import { Image } from "astro:assets";
+---
+
+<nav class="flex items-center justify-around p-4">
+  <a href="/" class="flex items-center">
+    <Image src="/shared/desktop/logo.svg" alt="logo" width="200" height="200" />
+  </a>
+
+  <ul class="hidden md:flex items-center gap-4">
+    <li><a href="/stories">STORIES</a></li>
+    <li><a href="/features">FEATURES</a></li>
+    <li><a href="/pricing">PRICING</a></li>
+  </ul>
+
+  <button
+    class="text-white bg-black rounded-md py-2 px-6 cursor-pointer hidden md:inline-block"
+  >
+    GET AN INVITE
+  </button>
+
+  <details class="relative md:hidden w-full">
+    <summary
+      class="list-none cursor-pointer flex items-center justify-center w-10 h-10 ml-auto"
+      aria-label="Toggle menu"
+    >
+      <div class="hamburger" aria-hidden="true">
+        <span class="bar bar--top"></span>
+        <span class="bar bar--mid"></span>
+        <span class="bar bar--bot"></span>
+      </div>
+    </summary>
+
+    <div
+      class="absolute left-0 right-0 mt-2 rounded-md border bg-white shadow-lg w-full"
+    >
+      <ul class="flex flex-col py-2 w-full">
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-50" href="/stories"
+            >STORIES</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-50" href="/features"
+            >FEATURES</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-50" href="/pricing"
+            >PRICING</a>
+        </li>
+      </ul>
+      <div class="px-4 pb-3">
+        <a
+          href="/invite"
+          class="block text-center text-white bg-black rounded-md py-2 px-4"
+        >
+          GET AN INVITE
+        </a>
+      </div>
+    </div>
+  </details>
+</nav>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    width: 28px;
+    height: 20px;
+    display: inline-block;
+  }
+  .hamburger .bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transform-origin: 50% 50%;
+    transition:
+      transform 0.25s ease,
+      opacity 0.2s ease,
+      top 0.25s ease;
+  }
+  .hamburger .bar--top {
+    top: 0;
+  }
+  .hamburger .bar--mid {
+    top: 9px;
+  }
+  .hamburger .bar--bot {
+    top: 18px;
+  }
+
+  details[open] .hamburger .bar--top {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  details[open] .hamburger .bar--mid {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  details[open] .hamburger .bar--bot {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  .menu-panel {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px);
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease,
+      transform 0.25s ease;
+  }
+  details[open] .menu-panel {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hamburger .bar,
+    .menu-panel {
+      transition: none;
+    }
+  }
+</style>
