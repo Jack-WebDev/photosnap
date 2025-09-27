@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section class="flex flex-col-reverse md:flex-row items-stretch w-full">
+  <div class="lg:flex-1/6">
+    <Image
+      src={"/home/desktop/beautiful-stories.jpg"}
+      alt="hero"
+      width="50"
+      height="100"
+      class="hidden lg:inline-block w-full h-full"
+    />
+    <Image
+      src={"/home/tablet/beautiful-stories.jpg"}
+      alt="hero"
+      width="100"
+      height="100"
+      class="hidden md:inline-block lg:hidden w-full h-full"
+    />
+    <Image
+      src={"/home/mobile/beautiful-stories.jpg"}
+      alt="hero"
+      width="100"
+      height="100"
+      class="md:hidden w-full h-full"
+    />
+  </div>
+  <div
+    class="flex-1 md:flex md:flex-col md:justify-center md:items-center lg:items-baseline"
+  >
+    <div class="relative my-12 px-8 lg:pl-32 grid gap-y-4 w-full">
+      <h1
+        class="text-2xl md:text-5xl font-semibold tracking-wide text-center md:text-start"
+      >
+        BEAUTIFUL <br /> STORIES <br /> EVERY TIME
+      </h1>
+
+      <p
+        class="text-sm text-slate-500 font-semibold lg:w-[50ch] text-center md:text-start"
+      >
+        We provide design templates to ensure your stories look terrific. Easily
+        add photos, text, embed maps and media from other networks. Then share
+        your story with everyone.
+      </p>
+
+      <a
+        href="/stories"
+        class="tracking-wider flex items-center gap-4 justify-center md:justify-start font-semibold"
+      >
+        VIEW THE STORIES
+        <Image
+          src="/shared/desktop/arrow.svg"
+          alt="arrow"
+          width="70"
+          height="100"
+        />
+      </a>
+    </div>
+  </div>
+</section>
