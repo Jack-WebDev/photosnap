@@ -1,7 +1,166 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import StoryCard from "../_components/StoryCard";
 ---
 
 <BaseLayout title="Stories">
-  <h1>Stories</h1>
+  <div
+    class="flex flex-col justify-center bg-[url('/stories/mobile/moon-of-appalacia.jpg')] md:bg-[url('/stories/tablet/moon-of-appalacia.jpg')] lg:bg-[url('/stories/desktop/moon-of-appalacia.jpg')] bg-cover bg-center bg-no-repeat h-[28vh] md:h-[67vh] lg:h-[80vh] w-full pl-40 gap-4"
+  >
+    <p class="text-white uppercase mb-12 hidden lg:inline-block">Last Month&apos;s Feature Story</p>
+    <h1 class="text-white hidden lg:inline-block lg:text-7xl">
+      HAZY FULL <br /> MOON OF <br /> APPALACHIA
+    </h1>
+    <p class="text-white/65 hidden lg:inline-block">
+      March 2nd 2020 <span class="text-white">by John Appleseed</span>
+    </p>
+    <p class="w-[50ch] text-white/65 hidden lg:inline-block">
+      The dissected plateau area, while not actually made up of geological
+      mountains, is popularly called "mountains," especially in eastern Kentucky
+      and West Virginia, and while the ridges are not high, the terrain is
+      extremely rugged.
+    </p>
+    <a href="#" class=" gap-6 text-white hidden lg:flex"
+      ><span> READ THE STORY</span>
+      <Image
+        src="/shared/desktop/arrow-white.svg"
+        alt="arrow"
+        width="70"
+        height="100"
+      /></a
+    >
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full">
+    <StoryCard
+      creator="Samantha Brooke"
+      date="April 9th 2020"
+      title="Architecturals"
+      desktopBackgroundImage="/stories/desktop/architecturals.jpg"
+      mobileBackgroundImage="/stories/mobile/architecturals.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Mohammed Abdul"
+      date="March 19th 2020"
+      title="Rage of The Sea"
+      desktopBackgroundImage="/stories/desktop/rage-of-the-sea.jpg"
+      mobileBackgroundImage="/stories/mobile/rage-of-the-sea.jpg"
+      client:load
+    />
+
+    <StoryCard
+      creator="Lamarr Wilson"
+      date="March 11th 2020"
+      title="Behind the Waves"
+      desktopBackgroundImage="/stories/desktop/behind-the-waves.jpg"
+      mobileBackgroundImage="/stories/mobile/behind-the-waves.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Timothy Wagner"
+      date="April 7th 2020"
+      title="World Tour 2019"
+      desktopBackgroundImage="/stories/desktop/mountains.jpg"
+      mobileBackgroundImage="/stories/mobile/mountains.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="William Malcolm"
+      date="April 3th 2020"
+      title="Unforeseen Corners"
+      desktopBackgroundImage="/stories/desktop/unforeseen-corners.jpg"
+      mobileBackgroundImage="/stories/mobile/unforeseen-corners.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Tim Hillenburg"
+      date="March 29th 2020"
+      title="King on Africa: Part II"
+      desktopBackgroundImage="/stories/desktop/king-on-africa.jpg"
+      mobileBackgroundImage="/stories/mobile/king-on-africa.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Felicia Rourke"
+      date="March 21th 2020"
+      title="The Trip to Nowhere"
+      desktopBackgroundImage="/stories/desktop/trip-to-nowhere.jpg"
+      mobileBackgroundImage="/stories/mobile/trip-to-nowhere.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Benjamin Cruz"
+      date="March 5th 2020"
+      title="The Milky Way"
+      desktopBackgroundImage="/stories/desktop/milky-way.jpg"
+      mobileBackgroundImage="/stories/mobile/milky-way.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Mohammed Abdul"
+      date="March 4th 2020"
+      title="Night at The Dark Forest"
+      desktopBackgroundImage="/stories/desktop/dark-forest.jpg"
+      mobileBackgroundImage="/stories/mobile/dark-forest.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="John Appleseed"
+      date="April 16th 2020"
+      title="The Mountains"
+      desktopBackgroundImage="/stories/desktop/mountains.jpg"
+      mobileBackgroundImage="/stories/mobile/mountains.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Benjamin Cruz"
+      date="April 14th 2020"
+      title="Sunset Cityscapes"
+      desktopBackgroundImage="/stories/desktop/cityscapes.jpg"
+      mobileBackgroundImage="/stories/mobile/cityscapes.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Alexei Borodin"
+      date="April 11th 2020"
+      title="18 Days Voyage"
+      desktopBackgroundImage="/stories/desktop/18-days-voyage.jpg"
+      mobileBackgroundImage="/stories/mobile/18-days-voyage.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Michelle"
+      date="March 1th 2020"
+      title="Somwarpet’s Beauty"
+      desktopBackgroundImage="/stories/desktop/somwarpet.jpg"
+      mobileBackgroundImage="/stories/mobile/somwarpet.jpg"
+      client:load
+    />
+
+    <StoryCard
+      creator="Samantha Brooke"
+      date="March 9th 2020"
+      title="Calm Waters"
+      desktopBackgroundImage="/stories/desktop/calm-waters.jpg"
+      mobileBackgroundImage="/stories/mobile/calm-waters.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="Michelle"
+      date="March 16th 2020"
+      title="Running Free"
+      desktopBackgroundImage="/stories/desktop/running-free.jpg"
+      mobileBackgroundImage="/stories/mobile/running-free.jpg"
+      client:load
+    />
+    <StoryCard
+      creator="William Malcolm"
+      date="February 25th 2020"
+      title="Land of Dreams"
+      desktopBackgroundImage="/stories/desktop/land-of-dreams.jpg"
+      mobileBackgroundImage="/stories/mobile/land-of-dreams.jpg"
+      client:load
+    />
+  </div>
 </BaseLayout>
