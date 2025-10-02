@@ -1,0 +1,299 @@
+---
+import { Image } from "astro:assets";
+const copyrightDate = new Date().getFullYear();
+---
+
+<footer class="bg-black text-white py-8 md:px-12 lg:px-20">
+  <div class="grid-cols-[0.5fr_1fr_1fr] gap-6 hidden lg:grid">
+    <div class="grid gap-6">
+      <Image
+        src="/shared/desktop/logo-white.svg"
+        alt="logo"
+        width="200"
+        height="200"
+      />
+      <div class="flex items-center gap-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-facebook-icon lucide-facebook hover:text-blue-800 cursor-pointer"
+          ><path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-twitter-icon lucide-twitter hover:text-cyan-600 cursor-pointer"
+          ><path
+            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-instagram-icon lucide-instagram hover:text-purple-500 cursor-pointer"
+          ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path
+            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+            x1="17.5"
+            x2="17.51"
+            y1="6.5"
+            y2="6.5"></line></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-youtube-icon lucide-youtube hover:text-red-600 cursor-pointer"
+          ><path
+            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+          ></path><path d="m10 15 5-3-5-3z"></path></svg
+        >
+      </div>
+    </div>
+    <div>
+      <nav>
+        <ul class="grid gap-4">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/stories">STORIES</a></li>
+          <li><a href="/features">FEATURES</a></li>
+          <li><a href="/pricing">PRICING</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex flex-col justify-between items-end">
+      <div class="flex items-center justify-between gap-x-8">
+        <a href="#">GET AN INVITE</a>
+        <Image
+          src="/shared/desktop/arrow-white.svg"
+          alt="arrow"
+          width="70"
+          height="100"
+        />
+      </div>
+      <p>Copyright © {copyrightDate} PhotoSnap. ALL RIGHTS RESERVED.</p>
+    </div>
+  </div>
+
+  <div class="grid-cols-2 gap-6 hidden md:grid lg:hidden">
+    <div class="grid gap-6">
+      <Image
+        src="/shared/desktop/logo-white.svg"
+        alt="logo"
+        width="200"
+        height="200"
+      />
+      <ul class="flex items-center gap-4">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/stories">STORIES</a></li>
+        <li><a href="/features">FEATURES</a></li>
+        <li><a href="/pricing">PRICING</a></li>
+      </ul>
+      <div class="flex items-center gap-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-facebook-icon lucide-facebook hover:text-blue-800 cursor-pointer"
+          ><path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-twitter-icon lucide-twitter hover:text-cyan-600 cursor-pointer"
+          ><path
+            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-instagram-icon lucide-instagram hover:text-purple-500 cursor-pointer"
+          ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path
+            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+            x1="17.5"
+            x2="17.51"
+            y1="6.5"
+            y2="6.5"></line></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-youtube-icon lucide-youtube hover:text-red-600 cursor-pointer"
+          ><path
+            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+          ></path><path d="m10 15 5-3-5-3z"></path></svg
+        >
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between items-end">
+      <div class="flex items-center justify-between gap-x-8">
+        <a href="#">GET AN INVITE</a>
+        <Image
+          src="/shared/desktop/arrow-white.svg"
+          alt="arrow"
+          width="70"
+          height="100"
+        />
+      </div>
+      <p class="text-xs text-gray-300">
+        Copyright © {copyrightDate} PhotoSnap. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid gap-6 md:hidden">
+    <div class="grid justify-items-center gap-6">
+      <Image
+        src="/shared/desktop/logo-white.svg"
+        alt="logo"
+        width="200"
+        height="200"
+      />
+            <div class="flex items-center gap-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-facebook-icon lucide-facebook hover:text-blue-800 cursor-pointer"
+          ><path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-twitter-icon lucide-twitter hover:text-cyan-600 cursor-pointer"
+          ><path
+            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+          ></path></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-instagram-icon lucide-instagram hover:text-purple-500 cursor-pointer"
+          ><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path
+            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+            x1="17.5"
+            x2="17.51"
+            y1="6.5"
+            y2="6.5"></line></svg
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-youtube-icon lucide-youtube hover:text-red-600 cursor-pointer"
+          ><path
+            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+          ></path><path d="m10 15 5-3-5-3z"></path></svg
+        >
+      </div>
+      <ul class="flex items-center gap-4">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/stories">STORIES</a></li>
+        <li><a href="/features">FEATURES</a></li>
+        <li><a href="/pricing">PRICING</a></li>
+      </ul>
+
+    </div>
+
+    <div class="flex flex-col justify-between items-center gap-4">
+      <div class="flex items-center justify-between gap-x-8">
+        <a href="#">GET AN INVITE</a>
+        <Image
+          src="/shared/desktop/arrow-white.svg"
+          alt="arrow"
+          width="70"
+          height="100"
+        />
+      </div>
+      <p class="text-xs text-gray-300">
+        Copyright © {copyrightDate} PhotoSnap. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </div>
+</footer>
