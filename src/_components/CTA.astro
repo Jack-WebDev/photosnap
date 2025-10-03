@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section
+  class="flex flex-col lg:flex-row justify-center lg:justify-between items-center bg-[url('/shared/mobile/bg-beta.jpg')] md:bg-[url('/shared/desktop/bg-beta.jpg')] lg:bg-[url('/shared/desktop/bg-beta.jpg')] bg-cover bg-center bg-no-repeat h-[32vh] w-full text-white px-20"
+>
+  <h2 class="lg:text-5xl mb-8 lg:mb-0">WE&apos;RE IN BETA. <br /> GET YOUR INVITE <br /> TODAY!</h2>
+
+  <div>
+    <a
+      href="#"
+      class="tracking-wider flex flex-col lg:flex-row items-center gap-4 justify-center md:justify-start"
+    >
+      GET AN INVITE
+      <Image
+        src="/shared/desktop/arrow-white.svg"
+        alt="arrow"
+        width="70"
+        height="100"
+      />
+    </a>
+  </div>
+</section>

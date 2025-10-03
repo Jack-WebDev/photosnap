@@ -1,7 +1,14 @@
 ---
+import CTA from "../_components/CTA.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PricingHero from "../_components/PricingHero.astro";
+import PricingTable from "../_components/PricingTable.astro";
+import PricingSection1 from "../_components/PricingSection1.astro";
 ---
 
 <BaseLayout title="Pricing">
-  <h1>Pricing</h1>
+  <PricingHero />
+  <PricingSection1 />
+  <PricingTable />
+  <CTA />
 </BaseLayout>
